@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".DataEnterActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Give your Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/nameID"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:hint="Name"
+        android:singleLine="true"
+        android:layout_below="@id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+
+        android:inputType="numberDecimal"
+        android:id="@+id/mobile_umberID"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:hint="Mobile"
+        android:singleLine="true"
+        android:layout_below="@id/nameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/address_ID"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:hint="Address"
+        android:singleLine="true"
+        android:layout_below="@id/mobile_umberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/address_ID"
+        android:id="@+id/bloodGroupID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <DatePicker
+        android:visibility="gone"
+        android:layout_below="@id/address_ID"
+        android:layout_marginTop="15dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:id="@+id/last_DonationID"
+        android:layout_toRightOf="@id/bloodGroupID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:text="Last Donation"
+        android:id="@+id/button1"
+        android:layout_below="@id/address_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bloodGroupID"
+       />
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView3"
+        android:layout_below="@id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:text="Insert Data"
+        android:id="@+id/insert_buttonID"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

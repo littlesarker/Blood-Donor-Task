@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+   android:layout_margin="16dp"
+    tools:context=".SignInActivity">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/imageLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/donator"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_below="@id/imageLayoutID"
+        android:id="@+id/emailIDLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="23sp" />
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/passWordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailIDLogin"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="23sp" />
+
+
+    <Button
+        android:id="@+id/LoginBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passWordID"
+        android:layout_marginTop="15dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/newAccountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginBtnID"
+        android:layout_marginTop="20dp"
+        android:text="Create new Account"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:layout_below="@id/newAccountID"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

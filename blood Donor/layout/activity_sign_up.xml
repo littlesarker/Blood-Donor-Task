@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/imageLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/donator" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/inputTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLayoutID"
+        android:hint="Name"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/inputTextmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTextName"
+        android:hint="mobile"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/emailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTextmobile"
+        android:hint="Email"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/passID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailID"
+        android:layout_marginTop="15dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/registerBtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passID"
+        android:layout_marginTop="15dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/existAccountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBtnID"
+        android:layout_marginTop="20dp"
+        android:text="Log into existing Account"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/existAccountID"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
